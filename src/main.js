@@ -2,9 +2,9 @@ const daysInYear = function(number) {
   try {
     if (number === parseInt(number)) {
       if (((number % 4 == 0) && (number % 100 != 0)) || (number % 400 == 0)) {
-        console.log(366);return;
+        return 366;
       }
-      console.log(365);return;
+      return 365;
     }
     throw "exception";
   } catch(error) {
